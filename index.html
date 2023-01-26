@@ -61,6 +61,7 @@
           </button>
         </section>
       </div>
+      <!-- Backdrop -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="modal-btn" data-modal-close>
@@ -68,6 +69,60 @@
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <!-- Modal Form -->
+          <h2 class="form-title">
+            Leave your contacts and we will call you back
+          </h2>
+          <form action="" name="form-order" class="form-order">
+            <label class="order-label" for="name">Name</label>
+            <div class="form-box">
+              <input type="text" name="name" id="name" class="order-input" />
+              <svg class="order-icon">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+            <label class="order-label" for="tel">Phone</label>
+            <div class="form-box">
+              <input type="tel" name="tel" id="tel" class="order-input" />
+              <svg class="order-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="order-label" for="email">Email</label>
+            <div class="form-box">
+              <input type="email" name="email" id="email" class="order-input" />
+              <svg class="order-icon">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+
+            <label class="order-comment" for="comment">Comment</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              placeholder="Text input"
+              cols=""
+              rows=""></textarea>
+
+            <div class="chekbox">
+              <input
+                class="checkbox-hidden"
+                type="checkbox"
+                name="checkbox"
+                id="checkbox" />
+              <svg class="checkbox-icon">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+              <label class="order-label" for="checkbox"
+                >I accept the terms and conditions of the
+                <a class="link-order" href="./index.html"
+                  >Privacy Policy</a
+                ></label
+              >
+            </div>
+            <button class="btn-order" type="submit">Send</button>
+          </form>
         </div>
       </div>
 
@@ -419,6 +474,23 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-box">
+          <p class="footer-title">Subscribe</p>
+          <form action="" name="subscribe" class="subscribe">
+            <label for="" class="Subscribe-lebel">
+              <input
+                class="subscribe-input"
+                type="email"
+                placeholder="E-mail" />
+            </label>
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg class="subscribe-icon">
+                <use href="./images/sprite.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
