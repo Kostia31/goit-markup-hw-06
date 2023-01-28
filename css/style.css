@@ -789,6 +789,7 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
 
+  cursor: pointer;
   color: var(--accent-color);
   background-color: var(--brand-color);
 
@@ -893,11 +894,12 @@ body {
 }
 
 .item-card {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms var(--cubik);
 }
 
 .item-card:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .thumb-portfolio {
