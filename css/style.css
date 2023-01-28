@@ -271,7 +271,7 @@ body {
   background: var(--backdrop-bg);
 
   opacity: 1;
-  transition: transform 250ms var(--cubik);
+  transition: opacity 250ms var(--cubik), visibility 250ms var(--cubik);
 }
 
 .backdrop.is-hidden {
@@ -300,8 +300,8 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 250ms var(--cubik), scaleY 250ms var(--cubik);
-  transform: translate(-50%, -50%) scaleY(1) ;
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms var(--cubik);
 }
 
 .modal-btn {
@@ -464,12 +464,14 @@ body {
 .chekbox {
   position: relative;
   display: flex;
+  align-items: center;
 }
 
-.checkbox-hidden:checked + .checkbox-icon {
+.checkbox-hidden:checked + .order-label > .checkbox-icon {
   background-color: var(--btn-color);
   border-color: transparent;
 }
+
 .checkbox-icon {
   fill: var(--btn-secondary-clr);
   position: absolute;
@@ -481,9 +483,9 @@ body {
 
   border: 1.25px solid #2e2f42;
   border-radius: 2px;
-  
+
   transition: background-color 250ms var(--cubik),
-  border-color 250ms var(--cubik) ;
+    border-color 250ms var(--cubik);
 }
 
 .btn-order {
@@ -585,7 +587,7 @@ body {
 .section.team {
   padding-top: 120px;
 
-  background-color: var(--secondary-text);
+  background-color: var(--btn-secondary-clr);
 }
 
 .card {
